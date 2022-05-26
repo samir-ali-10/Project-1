@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Roboto:wght@500&display=swap" rel="stylesheet"/> -->
+</head>
+<body>
+    <div class="settings">
+        <i class="fa-solid fa-gear"></i>
+        <div class="settings-container">
+            <div class="options">
+                <h4>Colors</h4>
+                <ul class="color-list">
+                    <li class="active" data-color="blue"></li>
+                    <li data-color="orange"></li>
+                    <li data-color="green"></li>
+                    <li data-color="red"></li>
+                    <li data-color="yellowgreen"></li>
+                </ul>
+            </div>
+            <div class="options">
+                <h4>Random Background</h4>
+                <div class="random-background">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="options">
+                <h4>Show Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="show">Yes</span>
+                    <span class="no" data-display="hide">No</span>
+                </div>
+            </div>
+            <button class="reset-option">Reset Options</button>
+        </div>
+    </div>
+
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area">
+            <div class="logo">Special Design</div>
+            <div class="links-container">
+                <ul class="links">
+                    <li><a href="#about" data-section=".about-us">About</a></li>
+                    <li><a href="#skills" data-section=".skills">Skills</a></li>
+                    <li><a href="#galley" data-section=".gallery">Gallery</a></li>
+                    <li><a href="#timeline" data-section=".timeline">Timeline</a></li>
+                    <li><a href="#features" data-section=".features">Features</a></li>
+                    <li><a href="#testimonials" data-section=".testimonials">Testimonials</a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="introduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+    </div>
+    </div>
+
+    <div class="nav-bullets">
+        <div class="bullets" data-section=".about-us">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="bullets" data-section=".skills">
+            <div class="tooltip">Skills</div>
+        </div>
+        <div class="bullets" data-section=".gallery">
+            <div class="tooltip">Gallery</div>
+        </div>
+        <div class="bullets" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullets" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullets" data-section=".testimonials">
+            <div class="tooltip">Testimonials</div>
+        </div>
+        <div class="bullets" data-section=".contact">
+            <div class="tooltip">Contact Us</div>
+        </div>
+    </div>
+
+    <div class="about-us" id="about">
+        <div class="container">
+            <div class="info">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo non ad, ex similique voluptas in reprehenderit consequuntur iusto dolorem aliquam repellat sequi unde optio rem eum natus dolores nam laudantium.</p>
+            </div>
+            <div class="image-box">
+                <img src="https://img.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg?w=2000" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">CSS</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Python</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">PHP</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">MySQL</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="images-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/01.jpg?raw=true" alt="Image One">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/02.jpg?raw=true" alt="Image Two">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/03.jpg?raw=true" alt="Image Three">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/04.jpg?raw=true" alt="Image Four">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/05.jpg?raw=true" alt="Image Five">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/06.png?raw=true" alt="">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/07.jpg?raw=true" alt="">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/08.jpg?raw=true" alt="">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/09.jpg?raw=true" alt="">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/10.jpg?raw=true" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline" id="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2021</div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Test Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate expedita voluptatum illum hic labore corporis at quia, commodi laborum ut qui maiores. Eius ipsam temporibus impedit nihil officiis unde?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Test Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate expedita voluptatum illum hic labore corporis at quia, commodi laborum ut qui maiores. Eius ipsam temporibus impedit nihil officiis unde?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">2020</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Test Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate expedita voluptatum illum hic labore corporis at quia, commodi laborum ut qui maiores. Eius ipsam temporibus impedit nihil officiis unde?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Test Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate expedita voluptatum illum hic labore corporis at quia, commodi laborum ut qui maiores. Eius ipsam temporibus impedit nihil officiis unde?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_01.png?raw=true" alt="">
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_02.png?raw=true" alt="">
+                <h4>Programming</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_03.png?raw=true" alt="">
+                <h4>Organizing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_04.png?raw=true" alt="">
+                <h4>Planning</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_05.png?raw=true" alt="">
+                <h4>Shopping</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+            <div class="feat-box">
+                <img src="https://github.com/ElzeroWebSchool/SpecialDesign/blob/master/imgs/Icon_06.png?raw=true" alt="">
+                <h4>Photography</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni suscipit blanditiis laborum?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="container">
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda molestiae voluptatibus consectetur porro!</p>
+                <div class="person-info">
+                    <img src="http://placehold.jp/150x150.png" alt="">
+                    <div class="content">
+                        <h4>Samir Ali</h4>
+                        <p>CEO of Comapny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="name">
+                    <input type="number" placeholder="Your Number" name="phone number">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea placeholder="Your Message" name="message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer"><i class="fa-solid fa-copyright"></i>Made With Love By Me</div>
+
+    <script src="main.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script> -->
+</body>
+</html>
